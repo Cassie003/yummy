@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,300;0,500;1,200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* font-family: 'Encode Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display:grid;
+    place-items:center;
+    grid-auto-flow:column;
+    height:60px;
+    box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.33) ;
+}
+.meals-page,.recipes-page{
+    display:none;
+}
+.meals-page,.recipe-page,.home-page{
+    width:100%;
+    height:100%;
+    max-height: calc(100vh - 60px);
+    padding:16px;
+    justify-content:center;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.main-wrapper{
+    position: relative;
+    width:100%;
+    height:100%;
+    /* border: 2px solid #ff0000; */
+    max-width:100%;
+    max-height:100vh;
+    min-height: 100vh;
+    overflow:hidden;
+}
+.home-page{
+    max-height:calc(100vh - 60px);
+    overflow-y:auto;
+}
+.home-page-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    justify-content:center;
+    cursor:pointer;
+}
+.country-card,.meal-card{
+    flex-basis:calc(25% - 16px);
+    height:200px;
+    display:flex;
+    justify-content:center;
+    border:0.5px solid rgba(0, 0, 0, 0.33);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33); 
+}
+.areas{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+.areas > .country-img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    
+}
+.country-name{
+    /* position:relative; */
+    margin:5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.meals-page-container{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content: center;
+ padding:8px ;
+ gap:16px;
+ width:100%;
+}
+.meal-card{
+    flex-direction: column;
+}
+
+#arrow-back{
+flex-basis:100%;
+cursor:pointer;
+}
+.meal-img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover; 
+}
+
+#recipe-back{
+    flex-basis: 100%;
+    cursor:pointer;
+}
+.recipe-page{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    /* overflow-x:hidden; */
+}
+.recipe-page-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    object-fit:cover;
+}
+h2{
+    display:flex; 
+    align-self:start;
+    flex-basis:100%;
+}
+.instructions ,.ingredient,.measurements,.youtube-link{
+    display:flex;
+    padding:8px;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-content:space-around;
+    align-items:center;
+    flex-basis:100%;
+}
+.recipe-layout{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-basis:50%;
+}
+
