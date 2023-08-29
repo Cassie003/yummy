@@ -175,13 +175,13 @@ function getRecipe (recipe) {
     </div>
         <div  class="recipe-page-container"> 
               
-                <img src = "${item.strMealThumb}" style= "width:70%; height:70%; flex-basis:50%;
-                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.66); object-fit:cover; padding:8px 4px;
+                <img src = "${item.strMealThumb}" style= "width:30%; height:30%; flex-basis:75%;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.66); object-fit:cover; padding:8px 4px; position:absolute;
                 "/>
                 
-                <div class ="recipe-layout">
+                <div class ="recipe-layout"style "flex-basis:50%">
                 <h1>${item.strMeal} </h1>
-                <h2>Ingredients  </h2>
+                <h2>Ingredients   </h2>
                 ${ingredientObj}
                 <h2>Measurements</h2>
                 ${ measureObj}
